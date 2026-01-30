@@ -1,11 +1,16 @@
 import './App.css';
 import Kiskep from './galeria_komponensek/Kiskep';
 import { adatLista } from './adatok.js';
+import React from 'react';
+import{ useState } from 'react';
 
 function App() {
 
+  const [kepIndex, setNagyKep] = useState(0);
+
   function szuloMetodus(index){
     console.log("Erre az elemre kattintottam", index);
+    setNagyKep(index);
   }
 
   return (
@@ -16,7 +21,7 @@ function App() {
       <main className='appMain'>
         <div className='fokep'>
           <h3>Kiskutyák</h3>
-          <Kiskep adat = {{src:"/kepek/elso.jpg", alt: "gizsgugya egy"}} key={0}/>
+          <Kiskep adat = {adatLista[kepIndex]} key={0} szuloMetodus={szuloMetodus}/>
           <p>leiras</p>
         </div>
         <div className='galeria'>

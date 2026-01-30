@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Kiskep.css"
 
-function kiskep(props) {
+function Kiskep(props) {
 
     function indexVisszaad(){
         let index = props.adat.id;
@@ -12,8 +12,8 @@ function kiskep(props) {
   return (
     <div className='kiskep'>
     {console.log(props.adat)}
-        <img src={props.adat.src} alt={props.adat.alt} inClick={indexVisszaad} />
+        <img src={props.adat.src} alt={props.adat.alt} onClick={indexVisszaad} />
     </div>
   )
 }
-export default kiskep;
+export default Kiskep;
