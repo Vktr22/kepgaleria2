@@ -1,4 +1,5 @@
 import './App.css';
+import Kiskep from './galeria_komponensek/Kiskep';
 
 function App() {
   return (
@@ -9,16 +10,15 @@ function App() {
       <main className='appMain'>
         <div className='fokep'>
           <h3>Kiskutyák</h3>
-          <div className='kiemeltkepdiv'>
-            <img src="public/kepek/fokep.jpg" alt="" />
-          </div>
+          <Kiskep></Kiskep>
+          <p>leiras</p>
         </div>
         <div className='galeria'>
-          <div className='kiskep'><img src="public/kepek/elso.jpg" alt="" /></div>
-          <div className='kiskep'><img src="public/kepek/masodik.jpg" alt="" /></div>
-          <div className='kiskep'><img src="public/kepek/harmadik.jpg" alt="" /></div>
-          <div className='kiskep'><img src="public/kepek/negyedik.jpg" alt="" /></div>
-          <div className='kiskep'><img src="public/kepek/otodik.jpg" alt="" /></div>
+          <Kiskep></Kiskep>
+          <Kiskep></Kiskep>
+          <Kiskep></Kiskep>
+          <Kiskep></Kiskep>
+          <Kiskep></Kiskep>
         </div>
       </main>
       <footer>
