@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Kiskep.css"
 
-function kiskep() {
+function kiskep(props) {
   return (
     <div className='kiskep'>
-        <img src="/kepek/fokep.jpg" alt="" />
+    {console.log(props.adat)}
+        <img src={props.adat.src} alt={props.adat.alt} />
     </div>
   )
 }
