@@ -3,6 +3,11 @@ import Kiskep from './galeria_komponensek/Kiskep';
 import { adatLista } from './adatok.js';
 
 function App() {
+
+  function szuloMetodus(index){
+    console.log("Erre az elemre kattintottam", index);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +21,7 @@ function App() {
         </div>
         <div className='galeria'>
           {adatLista.map((elem, index) => {
-            return (<Kiskep adat={elem} key={index}/>);
+            return (<Kiskep adat={elem} key={index} szuloMetodus={szuloMetodus}/>);
           })}
         </div>
       </main>
