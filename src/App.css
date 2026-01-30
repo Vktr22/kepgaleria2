@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.appMain img {
+  width: 100%;
+  border-radius: 0.25rem; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fokep, .galeria {
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.kiskep {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+   padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.kiskep img {
+  border-radius: 0.5rem;
+}
+
+.galeria {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.kiskep {
+  flex: 1 1 calc(33.333% - 20px); 
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.appMain .kiemeltkepdiv {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+@media (max-width: 780px) {
+  .kiskep {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 480px) {
+  .kiskep {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
