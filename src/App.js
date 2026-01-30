@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Képgaléria</h1>
       </header>
+      <main className='appMain'>
+        <div className='fokep'>
+          <h3>Kiskutyák</h3>
+          <div className='kiemeltkepdiv'>
+            <img src="public/kepek/fokep.jpg" alt="" />
+          </div>
+        </div>
+        <div className='galeria'>
+          <div className='kiskep'><img src="public/kepek/elso.jpg" alt="" /></div>
+          <div className='kiskep'><img src="public/kepek/masodik.jpg" alt="" /></div>
+          <div className='kiskep'><img src="public/kepek/harmadik.jpg" alt="" /></div>
+          <div className='kiskep'><img src="public/kepek/negyedik.jpg" alt="" /></div>
+          <div className='kiskep'><img src="public/kepek/otodik.jpg" alt="" /></div>
+        </div>
+      </main>
+      <footer>
+        <p>NadVik</p>
+      </footer>
     </div>
   );
 }
