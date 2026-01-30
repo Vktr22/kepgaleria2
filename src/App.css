@@ -10,15 +10,9 @@
   padding: 10px;
 }
 
-.kiskep {
-  border: 1px solid gray;
-  border-radius: 0.5rem;
-   padding: 5px;
-}
 
-.kiskep img {
-  border-radius: 0.5rem;
-}
+
+
 
 .galeria {
   display: flex;
@@ -27,14 +21,10 @@
   justify-content: center;
 }
 
-.kiskep {
-  flex: 1 1 calc(33.333% - 20px); 
-  max-width: calc(33.333% - 20px);
-  box-sizing: border-box;
-}
 
 
-.appMain .kiemeltkepdiv {
+
+.appMain {
   border: 1px solid gray;
   border-radius: 10px;
   padding: 10px;
@@ -46,16 +36,4 @@
 
 
 
-@media (max-width: 780px) {
-  .kiskep {
-    flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
-  }
-}
 
-@media (max-width: 480px) {
-  .kiskep {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
